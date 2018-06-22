@@ -99,7 +99,7 @@ class AccountCompany
      */
     private $createddate;
     /**
-     * @Gedmo\Timestampable(on="change")
+     * @Gedmo\Timestampable(on="update")
      * @ORM\Column(type="datetime", nullable=false, columnDefinition="TIMESTAMP")
      */
     private $changeddate;

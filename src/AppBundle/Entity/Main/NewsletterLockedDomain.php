@@ -8,6 +8,7 @@
 
 namespace AppBundle\Entity\Main;
 
+use Gedmo\Mapping\Annotation as Gedmo;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -29,11 +30,13 @@ class NewsletterLockedDomain
     private  $domain;
 
     /**
+     * @Gedmo\Timestampable(on="create")
      * @ORM\Column(type="datetime", nullable=false)
      */
     private  $createddate;
 
     /**
+     * @Gedmo\Timestampable(on="update")
      * @ORM\Column(type="datetime", nullable=false)
      */
     private  $changeddate;

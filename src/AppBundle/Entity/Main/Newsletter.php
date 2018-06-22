@@ -56,12 +56,12 @@ class Newsletter
      */
     private $info;
     /**
-     *
+     * @Gedmo\Timestampable(on="create")
      * @ORM\Column(type="datetime", nullable=false, columnDefinition="TIMESTAMP")
      */
     private $createddate;
     /**
-     *
+     * @Gedmo\Timestampable(on="update")
      * @ORM\Column(type="datetime", nullable=false, columnDefinition="TIMESTAMP")
      */
     private $changeddate;
@@ -78,15 +78,15 @@ class Newsletter
      */
     private $unsubscribeDate;
     /**
-     * @ORM\Column(type="string", length=20, options={"default":null)
+     * @ORM\Column(type="string", length=20, options={"default":null})
      */
     private $unsubscribeIP;
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="string",length=20, options={"default":null})
      */
     private $creator;
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="string", length=12, options={"default":null})
      */
     private $randomHash;
 }
