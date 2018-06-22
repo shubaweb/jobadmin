@@ -1,0 +1,4 @@
+AppBundle\Entity\Users:
+    user{1..10}:
+        login: <email()>
+        plainPassword: helloworld

@@ -1,0 +1,17 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: 127.0.0.1
+    database_port: null
+    database_name: job_admin
+    database_user: root
+    database_password: '198509'
+    credentials_database_host: 127.0.0.1
+    credentials_database_port: null
+    credentials_database_name: credentials
+    credentials_database_user: root
+    credentials_database_password: '198509'
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: null
+    mailer_password: null
+    secret: 5ffde4915d6b8cad9cb24567c7b42cb5273840e8
